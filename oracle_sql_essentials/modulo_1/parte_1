@@ -1,0 +1,13 @@
+1 - Os comandos iSQL*Plus acessam o Banco de Dados
+	R=Verdadeiro
+2 - Esta instrução SELECT é executada com êxito:
+	select last_name, job_id, salary as sal from employees;
+	R=Verdadeiro
+3 - Esta instrução SELECT é executada com êxito:
+	select * from job_grades;
+	R=Falso
+4 - Há quatro erros de codificação na instrução a seguir. Você consegue identificados?
+	select employee_id, last_name sal x 12 ANNUAL SALARY FROM employees;
+	R= 1 - Falta de vírgula
+	   2 - Coluna sal não existe
+	   3 - Alias ANNUAL sem vírgula

@@ -88,3 +88,11 @@
 - Aula 02 Página
 - Aula 03 Página
 - Scripts capítulos 01 até 12 Página
+
+## Programas necessarios
+- client_oracle11.zip
+- InstallSQLTools_16.exe
+- OracleXE112_Win32.zip
+- sqldeveloper-4.2.0.16.356.1154-no-jre.zip
+
+## Renato Lucena - 2018
