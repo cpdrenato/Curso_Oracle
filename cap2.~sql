@@ -1,0 +1,8 @@
+SELECT cod_aluno, nome, cidade
+FROM taluno;
+
+SELECT cod_aluno AS codigo, nome AS "Nome do aluno"
+FROM taluno;
+
+-- distinct           retira linhas duplicadas
+-- todas colunas tem que ser igual

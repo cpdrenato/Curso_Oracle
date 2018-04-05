@@ -1,0 +1,88 @@
+
+SELECT cod_aluno, nome
+FROM taluno
+WHERE estato =  'rs'
+
+
+SELECT cod_contrato,data, total, desconto + 10
+FROM tcontrato
+WHERE total >= desconto +10;
+
+>> inicio<<
+
+SELECT * FROM TALUNO;
+
+ALTER TABLE taluno ADD ESTADO CHAR(2) DEFAULT 'RS';
+
+ALTER TABLE taluno ADD salario number(8,2) DEFAULT 1620;
+
+ALTERar  salarios e estados pelo cod aluno
+
+UPDATE taluno SET
+estado = 'GO', salario = 4800
+WHERE cod_aluno = 1;
+
+UPDATE taluno SET
+estado = 'AC', salario = 800
+WHERE cod_aluno = 2;
+
+UPDATE taluno SET
+estado = 'MT', salario = 3000
+WHERE cod_aluno = 3;
+
+UPDATE taluno SET
+estado = 'SP',
+salario = 2800
+WHERE cod_aluno = 4;
+
+SELECT * FROM TALUNO;
+
+COMMIT;
+
+usando WHERE
+
+
+SELECT * FROM taluno
+WHERE ESTADO <> 'RS'
+AND salario <= 2000
+ORDER BY salario DESC;
+
+INSERT INTO taluno (cod_aluno, nome, cidade)
+VALUES (SEQ_ALUNO.NEXTVAL, 'VALDO', 'DOIS IRMAOS');
+
+INSERT INTO taluno (cod_aluno, nome, cidade)
+VALUES (SEQ_ALUNO.NEXTVAL, 'ALDO', 'QUATRO IRMAOS');
+
+SELECT * FROM TALUNO;
+
+UPDATE taluno SET
+ESTADO = 'SP', SALARIO = 900, nome = 'PEDRO'
+WHERE COD_ALUNO = 25;
+
+
+SELECT ESTADO, SALARIO, NOME FROM TALUNO
+ORDER BY ESTADO, SALARIO DESC;
+
+----
+
+ALTER TABLE TALUNO ADD NASCIMENTO DATE DEFAULT SYSDATE - 1000;
+
+--REDUÇAO DE DATA
+SELECT SYSDATE - SYSDATE - 100 FROM DUAL;
+
+--
+SELECT * FROM TALUNO
+
+UPDATE taluno SET
+cep = '9000000'
+WHERE COD_ALUNO = 24;
+
+UPDATE taluno SET
+NASCIMENTO = '01/01/2000'
+WHERE COD_ALUNO = 2;
+
+
+commit
+
+
+
